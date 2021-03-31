@@ -420,14 +420,16 @@
     </reporting>
 
     <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>5eee673a12ce-releases</name>
+            <url>http://localhost:8081/artifactory/SPRING-PETCLINIC-libs-release-local</url>
+        </repository>
         <snapshotRepository>
             <id>snapshots</id>
-            <url>http://nexus:8081/nexus/content/repositories/snapshots</url>
+            <name>5eee673a12ce-snapshots</name>
+            <url>http://localhost:8081/artifactory/SPRING-PETCLINIC-libs-snapshot-local</url>
         </snapshotRepository>
-        <repository>
-            <id>releases</id>
-            <url>http://nexus:8081/nexus/content/repositories/releases</url>
-        </repository>
     </distributionManagement>
 
     <url>demopetclinic</url>
